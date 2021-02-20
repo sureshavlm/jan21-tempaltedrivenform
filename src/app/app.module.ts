@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { CustomvalidationService } from './customvalidation.service';
 
 import { AppComponent } from './app.component';
 
@@ -8,9 +11,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ CustomvalidationService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
